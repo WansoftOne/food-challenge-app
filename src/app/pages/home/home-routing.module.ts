@@ -6,6 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children: [
+      {
+        path: 'foods',
+        loadChildren: () => import('../../pages/foods/foods.module').then( m => m.FoodsPageModule)
+      }
+    ]
   }
 ];
 

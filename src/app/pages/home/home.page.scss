@@ -25,3 +25,7 @@
 #container a {
   text-decoration: none;
 }
+
+.active-item {
+  border-left: 8 px solid var(--ion-color-primary);
+}

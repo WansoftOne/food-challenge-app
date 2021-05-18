@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  pages =[
+    {
+      title: 'foods',
+      url: '/foods',
+      icon: 'fast-food-outline'
+    },
+  ]
+  
+  selectedPath = '';
 
+  constructor() {
+  }
 }
