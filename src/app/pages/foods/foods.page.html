@@ -1,4 +1,21 @@
 <app-header title="Foods"></app-header>
 <ion-content [fullscreen]="true">
-  empty template
+  
+  <ion-searchbar [(ngModel)]="query" (search)="findByQuery()"></ion-searchbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeSm="12" sizeMd="6" sizeLg="4" *ngFor="let food of foods">
+        <app-food-item [data]="food"></app-food-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadMoreData()">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
 </ion-content>
