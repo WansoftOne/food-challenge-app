@@ -7,4 +7,6 @@
     <p><small>fdcId: {{ data.fdcId}}</small></p>
     <p><small>Publicated at: {{ data.publishedDate }}</small></p>
   </ion-label>
+
+  <ion-icon slot="end" name="star" (click)="saveToFavorites()" [class.custom-ion-icon]="isFavorite == true"></ion-icon>
 </ion-item>

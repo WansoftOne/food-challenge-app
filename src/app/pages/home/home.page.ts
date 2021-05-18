@@ -13,6 +13,11 @@ export class HomePage {
       url: '/foods',
       icon: 'fast-food-outline'
     },
+    {
+      title: 'Favorites',
+      url: '/food/favorites',
+      icon: 'fast-food-outline'
+    },
   ]
   
   selectedPath = '';

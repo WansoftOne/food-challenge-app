@@ -15,6 +15,10 @@ const routes: Routes = [
         path: 'food/detail',
         loadChildren: () => import('../../pages/food-detail/food-detail.module').then( m => m.FoodDetailPageModule)
       },
+      {
+        path: 'food/favorites',
+        loadChildren: () => import('../../pages/favorites/favorites.module').then( m => m.FavoritesPageModule)
+      },
     ]
   }
 ];
