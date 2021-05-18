@@ -1,7 +1,6 @@
 export interface AbridgeFoodNutrients {
-    number: number;
-    name: string;
-    amount: number;
+    nutrientName: string;
+    value: number;
     unitName: string;
     derivationCode: string;
     derivationDescription: string

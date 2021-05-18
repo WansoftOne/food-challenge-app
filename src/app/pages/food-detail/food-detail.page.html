@@ -1,0 +1,13 @@
+<app-header title="Food detail"></app-header>
+<ion-content [fullscreen]="true">
+  
+  <app-food-item [data]="data"></app-food-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeXs="12" sizeSm="12" sizeMd="6" sizeLg="4"  *ngFor="let n of data.foodNutrients">
+          <app-food-nutrient-item [nutrient]="n"></app-food-nutrient-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
